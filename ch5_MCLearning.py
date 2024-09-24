@@ -14,7 +14,7 @@ class GridWorld():
         elif a==1:
             self.move_left()
         elif a==2:
-            self.move_right()
+            self.move_up()
         elif a==3:
             self.move_down()
 
