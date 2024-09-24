@@ -4,16 +4,15 @@ import tqdm
 
 class GridWorld():
     def __init__(self):
-        random.seed(24)
         self.x=0
         self.y=0
 
     def step(self, a):
         # 0번 액션: 왼쪽, 1번 액션: 위, 2번 액션: 오른쪽, 3번 액션: 아래쪽
         if a==0:
-            self.move_left()
+            self.move_right()
         elif a==1:
-            self.move_up()
+            self.move_left()
         elif a==2:
             self.move_right()
         elif a==3:
